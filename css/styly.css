@@ -1,0 +1,56 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 5px solid;
+    border-radius: 10px;
+    background-color: rgba(224, 221, 221, 0.815);
+}
+
+input[type="button"].highlight{
+    background-color: rgb(165, 167, 184);
+}
+
+input[type="button"]{
+    
+    width:60px;
+    height: 50px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin: 2px;
+    font-size: 2em;
+    
+}
+/*hover reaguje při najetí myší  */
+input[type="button"]:hover{
+    background-color: dodgerblue;
+    color: white;
+}
+
+input[type="text"]{
+    height: 50px;
+    width: 245px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 2em;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
+
+label{
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+}

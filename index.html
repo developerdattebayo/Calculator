@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webová Kalkulačka</title>
+    <link rel="stylesheet" href="css/styly.css">
+
+</head>
+<body>
+
+    <div class="calculator">
+            <div>
+                <label>Webová kalkulačka</label>
+            </div>
+            <div>
+                <input type="text" id="resultwindow" readonly value="0">
+                
+            </div>
+            <div>
+                <input type="button" value="9" onclick="appendNumber('9')">
+                <input type="button" value="8" onclick="appendNumber('8')">
+                <input type="button" value="7" onclick="appendNumber('7')">
+                <input type="button" value="+" onclick="setOperation('+')">
+            </div>
+            <div>
+                <input type="button" value="6" onclick="appendNumber('6')">
+                <input type="button" value="5" onclick="appendNumber('5')">
+                <input type="button" value="4" onclick="appendNumber('4')">
+                <input type="button" value="-" onclick="setOperation('-')">
+            </div>
+            <div>
+                <input type="button" value="3" onclick="appendNumber('3')">
+                <input type="button" value="2" onclick="appendNumber('2')">
+                <input type="button" value="1" onclick="appendNumber('1')">
+                <input type="button" value="*" onclick="setOperation('*')">
+            </div>
+            <div>
+                <input type="button" value="." onclick="appendDecimalSeparator()">
+                <input type="button" value="0" onclick="appendNumber('0')">
+                <input type="button" value="/" onclick="setOperation('/')">
+                <input type="button" value="=" class="highlight" onclick="calculate()">
+            </div>
+            <div>
+                <input type="button" value="CE" onclick="clean();">
+                <input type="button" value="+/-" onclick="changeToNegativeOrPossitive();">
+            </div>
+    </div>
+
+    <script src="js/kalkulacka.js" defer></script>
+</body>
+</html>
